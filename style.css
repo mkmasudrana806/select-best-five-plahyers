@@ -9,6 +9,9 @@ body{
 }
 /* above design common for document  */
 
+.heading-section{
+    display: none;
+}
 
 .heading-container{
 height: 500px;
@@ -136,7 +139,7 @@ h1{
 }
 
 /* footer section  */
-footer{
+.footer{
     height: 100px;
     display: flex;
     justify-content: center;
@@ -144,4 +147,27 @@ footer{
     color: white;
 }
 
+
+
+/* media query for mobile device  */
+@media  screen and (max-width: 570px) {
+    .container{
+        width: 100%;
+    }   
+     .playerList-SelectedPlayer-container{
+        flex-direction: column;
+     }
+     .players-container{
+        width:90%;
+        padding: 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .selected-players-container{
+        width: 90%;
+       padding: 20px;
+    }
+    .footer{
+        width: 100%;
+    }
+}
 

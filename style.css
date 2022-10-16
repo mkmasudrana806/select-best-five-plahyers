@@ -150,7 +150,7 @@ h1{
 
 
 /* media query for mobile device  */
-@media  screen and (max-width: 570px) {
+@media  screen and (max-width: 576px) {
     .container{
         width: 100%;
     }   
@@ -168,6 +168,29 @@ h1{
     }
     .footer{
         width: 100%;
+    }
+}
+
+/* media query for tablet device  */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }   
+     .playerList-SelectedPlayer-container{
+        flex-direction: column;
+     }
+     .players-container{
+        width:95%;
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player-photo{
+        height: 300px;
+    }
+    .selected-players-container{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }
 

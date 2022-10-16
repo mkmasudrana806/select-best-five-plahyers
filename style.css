@@ -1,0 +1,147 @@
+/* here using google fonts for common fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #181515f3;
+    margin: 0;
+    padding: 0;
+}
+/* above design common for document  */
+
+
+.heading-container{
+height: 500px;
+background: rgb(63, 53, 146);
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(images/1d.png), url(images/2d.png),url(images/4d.png),url(images/3d.png);
+background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+background-position-x: left, right, center;
+margin-bottom: 50px;
+}
+
+.title-info{
+    width:650px;
+    color: rgb(209, 189, 189);
+    text-align: center;
+}
+.title{
+    color: #FF5E19;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/* here is the main container where player list and budget  */
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.playerList-SelectedPlayer-container{
+    display: flex;
+}
+.players-container{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.player{
+    background-color: #0D0D0D;
+    border: 2px solid #8080805b;
+    height: max-content;
+}
+.player-photo{
+    height: 200px;
+}
+.player-photo img{
+    height: 100%;
+    width: 100%;
+}
+
+/* player information  */
+.player-info{
+    color: white;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+}
+.player-info h4{
+    color: #acacac;
+}
+.btn-select{
+    background-color: #573ccfb9;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    /* border-radius: 5px; */
+    color: white;
+}
+.btn-hover:hover{
+    background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+}
+
+/* selected players list and their budget container  */
+.selected-players-container{
+    width: 25%;
+    margin-left:2%;
+}
+
+.selected-player-list{
+    color: white;
+    background-color:#0D0D0D;
+    border: 2px solid#0D0D0D;
+    height: 380px;
+    margin-bottom: 23px;
+    display: none;
+}
+
+.player-budget-container{
+    color: #ffffffe0;
+    background-color: #0D0D0D;
+    border: 2px solid #0D0D0D;
+   height: max-content;
+    padding: 15px;
+}
+h1{
+    text-align: center;
+}
+
+
+/* below is the design for budget container  */
+.total,.player-expenses{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.coach-amount, .manager-amount, .per-player-amount{
+    width: 100px;
+    padding: 15px;
+    border: 2px solid grey;
+    font-size: 15px;
+}
+
+.coach, .manager, .per-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#total-amount{
+    color: #FF5E19;
+}
+
+/* footer section  */
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+

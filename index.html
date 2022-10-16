@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Best Player For Your Team</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="heading-section">
+        <div class="heading-container">
+          <div class="title-info">
+            <h1 class="title">Hire Best Player For Team</h1>
+            <p>
+              The FIFA World Cup Qatar 2022™ will be played from 20 November to
+              18 December in Qatar.Create and share your own FIFA 22 Ultimate
+              Team Squad. Choose from any player available and discover average
+              rankings and prices.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container">
+        <div class="playerList-SelectedPlayer-container">
+          <!-- players list or players container start  -->
+          <div id="players-container" class="players-container">
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/naymer.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Neymar Jr</h1>
+                <h4>36 Goals &diams; 120 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/Lionel-Messi-Barcelona-2016.webp" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Lionel Messi</h1>
+                <h4>20 Goals &diams; 100 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/Rodrigo De Pau.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Rodrigo De Pau</h1>
+                <h4>33 Goals &diams; 120 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/vinicius jr.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Vinicius jr</h1>
+                <h4>20 Goals &diams; 110 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/kevin de bruyne.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Kevin de bruyne</h1>
+                <h4>25 Goals &diams; 80 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/mohammad salah.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Mohamed salah</h1>
+                <h4>36 Goals &diams; 120 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/cristian romero.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Cristian Romero</h1>
+                <h4>40 Goals &diams; 120 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/robert lewandowski.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Robert</h1>
+                <h4>23 Goals &diams; 50 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-photo">
+                <img src="images/Gabriel Martinelli.png" alt="" />
+              </div>
+              <div class="player-info">
+                <h1>Gabriel Martinelli</h1>
+                <h4>25 Goals &diams; 54 Assist</h4>
+                <button class="btn-select btn-hover">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- players list or players container start  -->
+
+          <!-- selected and player budget container  -->
+          <div class="selected-players-container">
+            <div id="selected-player-container" class="selected-player-list">
+              <h1>Selected Players</h1>
+              <ol id="select-player-add"></ol>
+            </div>
+            <!--budget start container  -->
+            <div class="player-budget-container">
+              <h1>Budget</h1>
+              <div class="per-player">
+                <p>Per Player</p>
+                <input
+                  id="per-player-amount"
+                  class="per-player-amount"
+                  type="text" autocomplete="off"
+                  placeholder="Amount"
+                />
+              </div>
+              <button id="calculate" class="btn-select">Calculate</button>
+              <div>
+                <div class="player-expenses">
+                  <h4>Player Expenses</h4>
+                  <h4>$<span id="expenses">000</span></h4>
+                </div>
+                <div class="manager">
+                  <h4>Manager</h4>
+                  <input
+                    id="manager-amount"
+                    class="manager-amount"
+                    type="text"
+                    placeholder="Amount"
+                  />
+                </div>
+                <div class="coach">
+                  <h4>Coach</h4>
+                  <input
+                    id="coach-amount"
+                    class="coach-amount"
+                    type="text"
+                    placeholder="Amount"
+                  />
+                </div>
+                <button id="calculate-total" class="btn-select">
+                  Calculate Total
+                </button>
+                <div class="total">
+                  <h4>Total</h4>
+                  <h4>$<span id="total-amount">000</span></h4>
+                </div>
+              </div>
+            </div>
+            <!-- budget container  end-->
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>Copyright @ 2022 All Rights Reserved</p>
+    </footer>
+
+    <!-- here is the javaScript file  -->
+    <script src="javaScript/allFunction.js"></script>
+    <script src="javaScript/main.js"></script>
+  </body>
+</html>

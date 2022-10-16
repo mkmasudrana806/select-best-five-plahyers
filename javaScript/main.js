@@ -39,7 +39,7 @@ document.getElementById('calculate').addEventListener('click', function(){
         return;
     }else{
         if(countSelectedPlayer==0){
-            return alert('please enter player');
+            return alert('please select player');
         }
         seInnerText('expenses', newAmount);
     }
@@ -48,7 +48,7 @@ document.getElementById('calculate').addEventListener('click', function(){
 
 //*******************************  event listener for calculate total button ********************************
 document.getElementById('calculate-total').addEventListener('click', function(){
-    const expensesAmount = getElementValue('expenses')
+    const expensesAmount = getElementValue('expenses');
     const managerInputAmount = getInputValue('manager-amount');
     const coachInputAmount = getInputValue('coach-amount');
     // input error check 
@@ -59,6 +59,10 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     // input error check 
     else if(isNaN(coachInputAmount)){
         alert('please enter number');
+        return;
+    }
+    else if(expensesAmount==0){
+        alert('please select player first');
         return;
     }
     else{
